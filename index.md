@@ -1,9 +1,7 @@
-# FASE Artifact Evaluation 2022
+# Important Dates
 
-## Important Dates
+# Artifact Evaluation
 
-## Artifact Evaluation
+# Artifact Submission
 
-## Artifact Submission
-
-## Artifact Packaging Guidelines
+# Artifact Packaging Guidelines
