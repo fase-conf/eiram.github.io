@@ -1,4 +1,19 @@
-Based on positive experiences in other venues, FASE'22 will ..... 
+Based on positive experiences of the community, FASE'22 will have an optional artifact evaluation for accepted papers.
+
+The goal of the artifact evaluation is twofold. 
+On the one hand, we want to encourage authors to provide more substantial evidence to their papers and to reward authors who create artifacts. 
+On the other hand, we want to simplify the independent replication of results presented in the paper and to ease future comparison with existing approaches.
+
+Artifacts of interest include (but are not limited to):
+* Software, Tools, or Frameworks
+* Data sets
+* Test suites
+* Machine-checkable proofs
+* Any combination of them
+* Any other artifact described in the paper
+
+Papers that are successfully evaluated will be awarded one or two artifact badges. 
+Submission of artifacts is optional and will not change the decision of acception of the original paper.
 
 # Important Dates
  * 05.01.22 - Submission Artifact
@@ -26,6 +41,7 @@ Github will *not* be used to upload the artifact itself.
     
 ## Assessment Phase
 In the assessment phase, reviewers will try to reproduce any experiments or activities and evaluate the artifact w.r.t the questions detailed above.
+The final review is communicated using EasyChair.
 
 ## Awarding
 FASE awards the [evaluation and availability badges of EAPLS](https://eapls.org/pages/artifact_badges/). 
@@ -35,5 +51,27 @@ FASE awards the [evaluation and availability badges of EAPLS](https://eapls.org/
 Availability and evaluation badges are awareded independent of each other. 
 
 # Artifact Submission
+An artifact submission conists of
+
+* An abstract that (1) summarizes the artifact and explains its relation to the paper, (2) document clearly how to perform the test phase (3) document how to reproduce the results of the paper (4) describe which badge the authors submit for, and (5) include
+        an URL from which a .zip file containing the artifact can be downloaded - we encourage you to provie a DOI - and
+        the SHA256 checksum of the .zip file.
+* A .pdf file of the most recent version of the accepted paper, which may differ from the submitted version to take reviewers' comments into account.
+
+Please also look at the Artifact Packaging Guidelines section for detailed information about the contents of the submission.
+
+The abstract and the .pdf file of your paper must be submitted to EasyChair.
+
+Link TBA
+
+We need the checksum to ensure the integrity of your artifact. You can generate the checksum using the following command-line tools.
+
+    Linux: sha256sum <file>
+    Windows: CertUtil -hashfile <file> SHA256
+    MacOS: shasum -a 256 <file> 
+
+If you cannot submit the artifact as requested or encounter any other difficulties in the submission process, please contact the artifact evaluation chairs prior to submission. 
 
 # Artifact Packaging Guidelines
+
+TBA
