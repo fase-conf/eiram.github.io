@@ -75,3 +75,56 @@ If you cannot submit the artifact as requested or encounter any other difficulti
 # Artifact Packaging Guidelines
 
 TBA
+
+## FASE 2022 Virtual Machine
+The [FASE 2022 virtual machine]() was created with VirtualBox 6.1.26 and consists of an installation of Ubuntu 20.04.03 with Linux 5.11.0-37 and the following notable packages.
+
+* A 32bit libc
+* clang 12.0.0 (default)
+* gcc 9.3.0
+* Mono 6.12.0.122
+* OCaml 4.13.1 and OPAM 2.1.0 
+* OpenJDK 11.0.11 (default), and OpenJDK 16.0.1 
+
+    To switch between Java versions, you can use  `sudo update-alternatives --config java`.
+* Python 2.7.18, Python 3.8.10, and pip3 (pip 20.0.2)
+* Ruby 2.7.0p0
+* bash 5.0.17(1)	
+* cmake 3.16.3
+* GNU Make 4.2.1
+* BenchExec 3.9
+* VIM 8.1
+* Emacs 26.3
+* VirtualBox guest additions 6.1.26
+
+The login and password of the default user are: `fase2022` / `fase2022`. The root user has the same password. 
+
+In order to save space, the VM does not have an active swap file. Please mention in your submission if you expect that a swap file is needed. You can activate swap for the running session using the following commands.
+
+    sudo fallocate -l 1G /swapfile
+    sudo chmod 600 /swapfile
+    sudo mkswap /swapfile
+    sudo swapon /swapfile
+    
+The artifact evaluation committee will be instructed not to download software or data from external sources. Any additional software required by your artifact must be included in the `.zip` file and the artifact must provide instructions for the installation. 
+
+To include an Ubuntu package in your artifact submission, you can provide a `.deb` file with all the necessary dependencies from inside the VM. Reviewers can then install them as follows.
+
+    sudo dpkg -i <.deb file>
+    
+You can get the necessary `.deb` files for example as follows:
+- If you have only one package without dependencies, you can use
+    `apt-get download <packagename>`
+- If you have only one package without dependencies but with local modifications, e.g., particular configuration files, you can use the dpkg-repack utility
+- If you have a package with multiple dependencies, you can use wget together with apt to download them all and put them into a folder:
+```
+    wget $(apt-get install --reinstall --print-uris -qq <packagename> | cut -d"'" -f2)
+```
+Alternatively, you may run the following code.
+```
+    sudo apt-get update
+    apt-get --print-uris install <packagename> | grep -oP "(?<=').*(?=')" > <filename>
+    for i in $(cat <filename>) ; do wget -nv $i ; done
+```
+
+TBA python, OCaml, ruby?
