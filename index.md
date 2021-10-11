@@ -80,13 +80,14 @@ TBA
 The [FASE 2022 virtual machine]() was created with VirtualBox 6.1.26 and consists of an installation of Ubuntu 20.04.03 with Linux 5.11.0-37 and the following notable packages.
 
 * A 32bit libc
-* clang 12.0.0 (default)
+* clang 12.0.0
 * gcc 9.3.0
 * Mono 6.12.0.122
 * OCaml 4.13.1 and OPAM 2.1.0 
 * OpenJDK 11.0.11 (default), and OpenJDK 16.0.1 
 
-    To switch between Java versions, you can use  `sudo update-alternatives --config java`.
+    To switch between Java runtimes, you can use  `sudo update-alternatives --config java`.
+    To switch between Java compilers, you can use  `sudo update-alternatives --config javac`.
 * Python 2.7.18, Python 3.8.10, and pip3 (pip 20.0.2)
 * Ruby 2.7.0p0
 * bash 5.0.17(1)	
@@ -108,6 +109,7 @@ In order to save space, the VM does not have an active swap file. Please mention
     
 The artifact evaluation committee will be instructed not to download software or data from external sources. Any additional software required by your artifact must be included in the `.zip` file and the artifact must provide instructions for the installation. 
 
+### Including Ubuntu Packages
 To include an Ubuntu package in your artifact submission, you can provide a `.deb` file with all the necessary dependencies from inside the VM. Reviewers can then install them as follows.
 
     sudo dpkg -i <.deb file>
@@ -127,4 +129,27 @@ Alternatively, you may run the following code.
     for i in $(cat <filename>) ; do wget -nv $i ; done
 ```
 
-TBA python, OCaml, ruby?
+### Including OCaml Packages
+You can include required OCaml packages not present in our installation via OPAM. To this end, you may want to download the packages, e.g., using the following command.
+
+    opam install --download-only --destdir=<dir> <package>
+ The reviewers may than use the following command to install all packages available in `<dir>`.
+ 
+    opam install <dir>
+ 
+### Including Python Packages
+You may include the required Python packages using pip.
+You can get the necessary `.deb` files for example as follows:
+ 
+    pip3 download <package>
+The downloaded package can then be installed using
+ 
+    pip3 install <package-file>
+
+### Including Ruby Gem Packages
+To provide missing Ruby Gem packages, you may download them via
+ 
+    gem fetch [gem] 
+and let the reviewer instal them, e.g., via
+ 
+    gem install <gem-file>
