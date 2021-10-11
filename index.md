@@ -84,14 +84,14 @@ If you cannot submit the artifact as requested or encounter any other difficulti
 
 # Artifact Packaging Guidelines
 
-We expect that authors package their artifact (.zip file) and write their instructions such that the artifact evaluation committee can evaluate the artifact within the [FASE 2022 virtual machine]() (see [below](#fase-2022-virtual-machine))).
+We expect that authors package their artifact (.zip file) and write their instructions such that the artifact evaluation committee can evaluate the artifact within the [FASE 2022 virtual machine](https://doi.org/10.5281/zenodo.5561969) (see [below](#fase-2022-virtual-machine))).
 The artifact must contain all the required files to replicate your results in the FASE 2022 virtual machine. 
 In particular, the artifact must include all additional software or libraries that are not part of the virtual machine and provide instructions how to install and set them up.
 Do not submit a virtual machine image in the .zip file. AEC members will copy your .zip file into the provided virtual machine.
 For further information, consider our [recommendations](#recommendations) on the artifact content.
 
 ## FASE 2022 Virtual Machine
-The [FASE 2022 virtual machine]() was created with VirtualBox 6.1.26 and consists of an installation of Ubuntu 20.04.03 with Linux 5.11.0-37 and the following notable packages.
+The [FASE 2022 virtual machine](https://doi.org/10.5281/zenodo.5561969) was created with VirtualBox 6.1.26 and consists of an installation of Ubuntu 20.04.03 with Linux 5.11.0-37 and the following notable packages.
 
 * A 32bit libc
 * clang 12.0.0
