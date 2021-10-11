@@ -131,7 +131,7 @@ To include an Ubuntu package in your artifact submission, you can provide a `.de
 You can get the necessary `.deb` files for example as follows:
 - If you have only one package without dependencies, you can use
     `apt-get download <packagename>`
-- If you have only one package without dependencies but with local modifications, e.g., particular configuration files, you can use the dpkg-repack utility
+- If you have only one package without dependencies but with local modifications, e.g., particular configuration files, you can use the dpkg-repack utility.
 - If you have a package with multiple dependencies, you can use wget together with apt to download them all and put them into a folder:
 ```
     wget $(apt-get install --reinstall --print-uris -qq <packagename> | cut -d"'" -f2)
@@ -164,7 +164,7 @@ The downloaded package can then be installed using
 To provide missing Ruby Gem packages, you may download them via
  
     gem fetch [gem] 
-and let the reviewer instal them, e.g., via
+and let the reviewer install them, e.g., via
  
     gem install <gem-file>
 
