@@ -84,7 +84,7 @@ If you cannot submit the artifact as requested or encounter any other difficulti
 
 # Artifact Packaging Guidelines
 
-We expect that authors package their artifact (.zip file) and write their instructions such that the artifact evaluation committee can evaluate the artifact within the [FASE 2022 virtual machine](https://doi.org/10.5281/zenodo.5561969) (see [below](#fase-2022-virtual-machine))).
+We expect that authors package their artifact (.zip file) and write their instructions such that the artifact evaluation committee can evaluate the artifact within the [FASE 2022 virtual machine](https://doi.org/10.5281/zenodo.5561969) (see [below](#fase-2022-virtual-machine)).
 The artifact must contain all the required files to replicate your results in the FASE 2022 virtual machine. 
 In particular, the artifact must include all additional software or libraries that are not part of the virtual machine and provide instructions how to install and set them up.
 Do not submit a virtual machine image in the .zip file. AEC members will copy your .zip file into the provided virtual machine.
@@ -147,6 +147,7 @@ Alternatively, you may run the following code.
 You can include required OCaml packages not present in our installation via OPAM. To this end, you may want to download the packages, e.g., using the following command.
 
     opam install --download-only --destdir=<dir> <package>
+    
  The reviewers may than use the following command to install all packages available in `<dir>`.
  
     opam install <dir>
@@ -156,6 +157,7 @@ You may include the required Python packages using pip.
 You can get the necessary `.deb` files for example as follows:
  
     pip3 download <package>
+    
 The downloaded package can then be installed using
  
     pip3 install <package-file>
@@ -164,6 +166,7 @@ The downloaded package can then be installed using
 To provide missing Ruby Gem packages, you may download them via
  
     gem fetch [gem] 
+    
 and let the reviewer install them, e.g., via
  
     gem install <gem-file>
