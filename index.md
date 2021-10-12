@@ -154,7 +154,7 @@ You can include required OCaml packages not present in our installation via OPAM
  
 ### Including Python Packages
 You may include the required Python packages using pip.
-You can get the necessary `.deb` files for example as follows:
+You can get the necessary files for example as follows:
  
     pip3 download <package>
     
@@ -165,16 +165,16 @@ The downloaded package can then be installed using
 ### Including Ruby Gem Packages
 To provide missing Ruby Gem packages, you may download them via
  
-    gem fetch [gem] 
+    gem fetch <gem>
     
 and let the reviewer install them, e.g., via
  
     gem install <gem-file>
 
 ## Recommendations
-We recommend to prepare your artifact in such a way that any computer science expert without dedicated expertise in your field can use your artifact, especially to replicate your results. For example, keep the evaluation process simple, provide easy-to-use scripts and a detailed README document. Furthermore, the artifact and its documentation should be self-contained.
+We recommend to prepare your artifact in such a way that any computer science expert without dedicated expertise in your field can use your artifact, especially replicate your results. For example, keep the evaluation process simple, provide easy-to-use scripts and a detailed README document. Furthermore, the artifact and its documentation should be self-contained.
 
-Next to the main artifact, i.e., data, software, libraries, scripts, etc. required to replicate the results of your paper and any additional software required by your artifact including an installation description, we recommend the include the following elements.
+Next to the main artifact, i.e., data, software, libraries, scripts, etc. required to replicate the results of your paper and any additional software required by your artifact including an installation description, we recommend to include the following elements.
 
 ### License File
 A LICENSE file describing the rights. Your license needs to allow the artifact evaluation chairs to download and distribute the artifact to the artifact evaluation committee members and the artifact evaluation committee members must be allowed to evaluate the artifact, e.g., use, execute, and modify the artifact for the purpose of artifact evaluation.
@@ -187,7 +187,7 @@ The README file should introduces the artifact to the user, i.e.,  describes wha
 * It should state the hardware requirements (RAM, number of cores, CPU frequency), which you considered to test your artifact. Your resource requirements should be modest and allow replication of results even on laptops. 
 * It should document how to perform the test phase evaluation, e.g., provide instructions that allow rudimentary testing (i.e., in such a way that technical difficulties would pop up) in as little time as possible.
 * It should contain a clear description how to repeat/replicate/reproduce the results presented in the paper.
-  *Please document which claims or results of the paper can be replicated with the artifact and how (e.g., which experiment must be performed). Please also explain which claims and results cannot be replicated and why.
+  * Please document which claims or results of the paper can be replicated with the artifact and how (e.g., which experiment must be performed). Please also explain which claims and results cannot be replicated and why.
   * Describe in detail how to replicate the results in the paper, especially describe the steps that need to be performed to replicate the results in the paper. To simplify the reviewing process, we recommend to provide evaluation scripts (where applicable).
   * Please provide for each task/step of the replication (an estimate) how long it will take to perform it or how long it took for you and what exact machine(s) you used.	
 * For tasks or experiments that require a large amount of resources (hardware or time), we additionally recommended to offer a possibility to replicate a subset of the results of the paper that can be reproduced in a reasonable amount of time (e.g., within 8 hours) on various hardware platforms including laptops.	 In this case, please also include a script to replicate only a subset of the results. If this is not possible, please contact the artifact evaluation chairs early, but no latter than before submission.
