@@ -49,7 +49,7 @@ The final review is communicated using EasyChair.
 
 ## Awarding
 FASE awards the [evaluation and availability badges of EAPLS](https://eapls.org/pages/artifact_badges/). 
- * The availability badge will be awarded if the artifact is publicly available and has a DOI. We recommend services like [zenodo](https://zenodo.org/) or [figshare](figshare.com) for this.
+ * The availability badge will be awarded if the artifact is publicly available and has a DOI. We recommend services like [zenodo](https://zenodo.org/) or [figshare](https://figshare.com/) for this.
  * The evaluation badge has two levels, functional and reusable. Each successfully evaluated artifact receives at least the functional bade. The reusable badge is granted to artifacts of very high quality. Authors may use all granted badges on the title page of the respective paper. Detailed guidelines for both levels are described [here](https://eapls.org/pages/artifact_badges/).
 
 Availability and evaluation badges are awarded independent of each other. 
