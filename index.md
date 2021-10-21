@@ -57,7 +57,7 @@ Availability and evaluation badges are awarded independent of each other.
 # Artifact Submission
 An artifact submission consists of
 
-* An abstract that 
+* An abstract in form of a .pdf file that 
   1. summarizes the artifact and explains its relation to the paper, 
   2. describes which badge the authors submit for,
   3. mentions where in the artifact it is documented how to perform the test phase and how to reproduce the results of the paper, and
