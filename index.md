@@ -61,9 +61,9 @@ An artifact submission consists of
   1. summarizes the artifact and explains its relation to the paper, 
   2. describes which badge the authors submit for,
   3. mentions where in the artifact it is documented how to perform the test phase and how to reproduce the results of the paper, and
-  4. includes an URL - we encourage you to provie a DOI - to a .zip file of your artifact containing
+  4. includes an URL - we encourage you to provide a DOI - to a .zip file of your artifact containing
     * a license file that allows the artifact evaluation committee to evaluate the artifact,  
-    * a clear documentatation how to perform the test phase 
+    * a clear documentation how to perform the test phase 
     * a documentation how to reproduce the results of the paper, and 
   5. the SHA256 checksum of the .zip file.
 * A .pdf file of the most recent version of the accepted paper, which may differ from the submitted version to take reviewers' comments into account.
@@ -86,7 +86,7 @@ If you cannot submit the artifact as requested or encounter any other difficulti
 
 We expect that authors package their artifact (.zip file) and write their instructions such that the artifact evaluation committee can evaluate the artifact within the [FASE 2022 virtual machine](https://doi.org/10.5281/zenodo.5561969) (see [below](#fase-2022-virtual-machine)).
 The artifact must contain all the required files to replicate your results in the FASE 2022 virtual machine. 
-In particular, the artifact must include all additional software or libraries that are not part of the virtual machine and provide instructions how to install and set them up.
+In particular, the artifact must include all additional software or libraries that are not part of the virtual machine and provide instructions on how to install and set them up.
 Do not submit a virtual machine image in the .zip file. AEC members will copy your .zip file into the provided virtual machine.
 For further information, consider our [recommendations](#recommendations) on the artifact content.
 
@@ -148,7 +148,7 @@ You can include required OCaml packages not present in our installation via OPAM
 
     opam install --download-only --destdir=<dir> <package>
     
- The reviewers may than use the following command to install all packages available in `<dir>`.
+ The reviewers may then use the following command to install all packages available in `<dir>`.
  
     opam install <dir>
  
@@ -172,7 +172,7 @@ and let the reviewer install them, e.g., via
     gem install <gem-file>
 
 ## Recommendations
-We recommend to prepare your artifact in such a way that any computer science expert without dedicated expertise in your field can use your artifact, especially replicate your results. For example, keep the evaluation process simple, provide easy-to-use scripts and a detailed README document. Furthermore, the artifact and its documentation should be self-contained.
+We recommend preparing  your artifact in such a way that any computer science expert without dedicated expertise in your field can use your artifact, especially replicate your results. For example, keep the evaluation process simple, provide easy-to-use scripts and a detailed README document. Furthermore, the artifact and its documentation should be self-contained.
 
 Next to the main artifact, i.e., data, software, libraries, scripts, etc. required to replicate the results of your paper and any additional software required by your artifact including an installation description, we recommend to include the following elements.
 
@@ -181,14 +181,14 @@ A LICENSE file describing the rights. Your license needs to allow the artifact e
 
 				
 ### README
-The README file should introduces the artifact to the user, i.e.,  describes what the artifact does, and guides the user through the installation, set up tests, and replication of your results. Ideally, it should consist of the following parts.
+The README file should introduce the artifact to the user, i.e.,  describe what the artifact does, and should guide the user through the installation, set up tests, and replication of your results. Ideally, it should consist of the following parts.
 
-* It should describe the steps to set up your artifact within the provided FASE 2022 VM. To simplify the reviewing process, we recommend to provide an installation script (if necessary).
+* It should describe the steps to set up your artifact within the provided FASE 2022 VM. To simplify the reviewing process, we recommend providing an installation script (if necessary).
 * It should state the hardware requirements (RAM, number of cores, CPU frequency), which you considered to test your artifact. Your resource requirements should be modest and allow replication of results even on laptops. 
 * It should document how to perform the test phase evaluation, e.g., provide instructions that allow rudimentary testing (i.e., in such a way that technical difficulties would pop up) in as little time as possible.
 * It should contain a clear description how to repeat/replicate/reproduce the results presented in the paper.
   * Please document which claims or results of the paper can be replicated with the artifact and how (e.g., which experiment must be performed). Please also explain which claims and results cannot be replicated and why.
   * Describe in detail how to replicate the results in the paper, especially describe the steps that need to be performed to replicate the results in the paper. To simplify the reviewing process, we recommend to provide evaluation scripts (where applicable).
   * Please provide for each task/step of the replication (an estimate) how long it will take to perform it or how long it took for you and what exact machine(s) you used.	
-* For tasks or experiments that require a large amount of resources (hardware or time), we additionally recommended to offer a possibility to replicate a subset of the results of the paper that can be reproduced in a reasonable amount of time (e.g., within 8 hours) on various hardware platforms including laptops.	 In this case, please also include a script to replicate only a subset of the results. If this is not possible, please contact the artifact evaluation chairs early, but no latter than before submission.
+* For tasks or experiments that require a large amount of resources (hardware or time), we additionally recommended to offer a possibility to replicate a subset of the results of the paper that can be reproduced in a reasonable amount of time (e.g., within 8 hours) on various hardware platforms including laptops.	 In this case, please also include a script to replicate only a subset of the results. If this is not possible, please contact the artifact evaluation chairs early, but no later than before submission.
 * Ideally, it describes how to use your artifact in general accompanied by small examples.
