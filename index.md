@@ -192,3 +192,27 @@ The README file should introduce the artifact to the user, i.e.,  describe what 
   * Please provide for each task/step of the replication (an estimate) how long it will take to perform it or how long it took for you and what exact machine(s) you used.	
 * For tasks or experiments that require a large amount of resources (hardware or time), we additionally recommended to offer a possibility to replicate a subset of the results of the paper that can be reproduced in a reasonable amount of time (e.g., within 8 hours) on various hardware platforms including laptops.	 In this case, please also include a script to replicate only a subset of the results. If this is not possible, please contact the artifact evaluation chairs early, but no later than before submission.
 * Ideally, it describes how to use your artifact in general accompanied by small examples.
+
+# Artifact Evaluation Committee
+Chairs
+* Marie-Christine Jakobs (Technische Universität Darmstadt, Germany)
+* Eduard Kamburjan (University of Oslo, Norway)
+
+Members
+* Chinmayi Baramashetru (University of Oslo, Norway)
+* Pablo C. Cañizares (Autonomous University of Madrid, Spain)
+* Saverio Giallorenzo (Università di Bologna, Italy and INRIA, France)
+* Pablo Gómez-Abajo (Autonomous University of Madrid, Spain)
+* Elena Gómez-Martínez (Autonomous University of Madrid, Spain)
+* Jan Haltermann (University of Oldenburg, Germany)
+* Hannes Kallwies (University of Lübeck, Germany)
+* Dylan Marinho (LORIA, Université de Lorraine, France)
+* Felix Pauck (Paderborn University, Germany)
+* Sven Peldszus (University of Koblenz-Landau, Germany)
+* Mohammad Rezaalipour (Università della Svizzera italiana, Switzerland)
+* Cedric Richter (University of Oldenburg, Germany)
+* Maya Retno Ayu Setyautami (Universitas Indonesia, Indonesia)
+* Asmae Heydari Tabar (Technische Universität Darmstadt, Germany)
+* Matthias Volk (University of Twente, The Netherlands)
+* Xiuheng Wu (Nanyang Technological University, Singapore)
+* Liu Ye (Nanyang Technological University, Singapore)
