@@ -200,7 +200,6 @@ Chairs
 
 Members
 * Chinmayi Baramashetru (University of Oslo, Norway)
-* Pablo C. Cañizares (Autonomous University of Madrid, Spain)
 * Saverio Giallorenzo (Università di Bologna, Italy and INRIA, France)
 * Pablo Gómez-Abajo (Autonomous University of Madrid, Spain)
 * Elena Gómez-Martínez (Autonomous University of Madrid, Spain)
