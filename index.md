@@ -38,10 +38,6 @@ The artifact evaluation is performed in the following two phases.
 
 ## Test Phase 
 In the test phase, reviewers check if the artifact is functional, i.e., they look for setup problems (e.g., corrupted, missing files, crashes on simple examples, etc.). If any problems are detected, the authors are informed of the outcome and asked for clarification.  
-
-To this end, a GitHub repository will be used, where discovered problems are communicated within an issue and a first notification is given to the authors at 16.01.2023, who then have 4 days to solve the problems and answer to the respective issue. Reviewers and authors are encouraged to use these 4 days for further clarifying comments. 
-
-GitHub will *not* be used to upload the artifact itself.
     
 ## Assessment Phase
 In the assessment phase, reviewers will try to reproduce any experiments or activities and evaluate the artifact w.r.t the questions detailed above.
