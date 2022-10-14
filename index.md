@@ -86,7 +86,38 @@ Do not submit a virtual machine image in the .zip file. AEC members will copy yo
 For further information, consider our [recommendations](#recommendations) on the artifact content.
 
 ## FASE 2023 Virtual Machine
-TBA
+The [FASE 2023 virtual machine]() was created with VirtualBox 6.1.38 and consists of an installation of Ubuntu 22.04.01 with Linux 5.15.0-50 and the following notable packages.
+
+* A 32bit libc
+* clang 14.0.0
+* gcc 11.2.0
+* Mono 6.12.0.182
+* OCaml 4.14.0 and OPAM 2.1.3
+* OpenJDK 11.0.16, and OpenJDK 17.0.4 (default)
+
+    To switch between Java runtimes, you can use  `sudo update-alternatives --config java`.
+    To switch between Java compilers, you can use  `sudo update-alternatives --config javac`.
+* Python 2.7.18, Python 3.10.6, and pip3 (pip 22.0.2)
+* Ruby 3.0.2p107
+* bash 5.1.16(1)	
+* cmake 3.22.1
+* GNU Make 4.3
+* BenchExec 3.13
+* VIM 8.2
+* Emacs 27.1
+* VirtualBox guest additions 6.1.38
+
+The login and password of the default user are: `fase2023` / `fase2023`. The root user has the same password. 
+
+In order to save space, the VM does not have an active swap file. Please mention in your submission if you expect that a swap file is needed. You can activate swap for the running session using the following commands.
+
+    sudo fallocate -l 1G /swapfile
+    sudo chmod 600 /swapfile
+    sudo mkswap /swapfile
+    sudo swapon /swapfile
+    
+The artifact evaluation committee will be instructed not to download software or data from external sources. Any additional software required by your artifact must be included in the `.zip` file and the artifact must provide instructions for the installation. 
+
 
 ### Including Ubuntu Packages
 To include an Ubuntu package in your artifact submission, you can provide a `.deb` file with all the necessary dependencies from inside the VM. Reviewers can then install them as follows.
