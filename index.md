@@ -32,6 +32,7 @@ All artifacts are evaluated by the artifact evaluation committee. Each artifact 
 * Is the artifact complete, i.e., how many of the results of the paper are replicable?
 * Is the artifact well-documented?
 * Is the artifact easy to use?
+* Does the artifact provide a proper and explicitly documented license?
 * Is the artifact publicly and permanently available?
 
 The artifact evaluation is performed in the following two phases.
@@ -80,13 +81,13 @@ If you cannot submit the artifact as requested or encounter any other difficulti
 
 # Artifact Packaging Guidelines
 We expect that authors package their artifact (.zip file) and write their instructions such that the artifact evaluation committee can evaluate the artifact within the FASE 2023 virtual machine (see [below](#fase-2023-virtual-machine)).
-The artifact must contain all the required files to replicate your results in the FASE 2023 virtual machine. 
+The artifact must contain all the required files to replicate your results in the [FASE 2023 virtual machine](https://doi.org/10.5281/zenodo.7446277). 
 In particular, the artifact must include all additional software or libraries that are not part of the virtual machine and provide instructions how to install and set them up.
 Do not submit a virtual machine image in the .zip file. AEC members will copy your .zip file into the provided virtual machine.
 For further information, consider our [recommendations](#recommendations) on the artifact content.
 
 ## FASE 2023 Virtual Machine
-The [FASE 2023 virtual machine]() was created with VirtualBox 6.1.38 and consists of an installation of Ubuntu 22.04.01 with Linux 5.15.0-50 and the following notable packages.
+The [FASE 2023 virtual machine](https://doi.org/10.5281/zenodo.7446277) was created with VirtualBox 6.1.40 and consists of an installation of Ubuntu 22.04.01 with Linux 5.15.0-50 and the following notable packages.
 
 * A 32bit libc
 * clang 14.0.0
@@ -105,7 +106,7 @@ The [FASE 2023 virtual machine]() was created with VirtualBox 6.1.38 and consist
 * BenchExec 3.13
 * VIM 8.2
 * Emacs 27.1
-* VirtualBox guest additions 6.1.38
+* VirtualBox guest additions 6.1.40
 
 The login and password of the default user are: `fase2023` / `fase2023`. The root user has the same password. 
 
@@ -115,6 +116,11 @@ In order to save space, the VM does not have an active swap file. Please mention
     sudo chmod 600 /swapfile
     sudo mkswap /swapfile
     sudo swapon /swapfile
+    
+While installing BenchExec 3.13, we needed to enable cgroups v1 next to cgroups v2. If you need to disable cgroups v1, you can use the following commands and afterwards need to restart the VM.
+
+    echo 'GRUB_CMDLINE_LINUX_DEFAULT="${GRUB_CMDLINE_LINUX_DEFAULT} systemd.unified_cgroup_hierarchy=1"' | sudo tee /etc/default/grub.d/cgroupsv1-for-benchexec.cfg
+    sudo update-grub
     
 The artifact evaluation committee will be instructed not to download software or data from external sources. Any additional software required by your artifact must be included in the `.zip` file and the artifact must provide instructions for the installation. 
 
@@ -196,4 +202,15 @@ The README file should introduces the artifact to the user, i.e.,  describes wha
 * Carlos Diego Nascimento Damasceno (Radboud University)
 
 ## Members
-TBA
+* Joshua Dawes (University of Luxembourg, Luxembourg)
+* Elena Gómez-Martínez (Universidad Autonoma de Madrid, Spain)
+* Boyue Caroline Hu (University of Toronto, Canada)
+* Eduard Kamburjan (University of Oslo, Norway)
+* Dylan Marinho (LORIA, Université de Lorraine, France)
+* Kristóf Marussy (Budapest University of Technology and Economics, Hungary)
+* Pedro Ribeiro (University of York, UK)
+* Lucas Sakizloglou (Technical University Cottbus-Senftenberg, Germany)
+* Italo Santos (Northern Arizona University, US)
+* Maya Retno Ayu Setyautami (Universitas Indonesia, Indonesia)
+* Michele Tucci (Charles University, Czech Republic)
+
