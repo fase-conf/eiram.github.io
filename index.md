@@ -61,8 +61,9 @@ An artifact submission consists of
   4. includes an URL - we encourage you to provie a DOI - to a .zip file of your artifact containing
     * a license file that allows the artifact evaluation committee to evaluate the artifact,  
     * a clear documentatation how to perform the test phase 
-    * a documentation how to reproduce the results of the paper, and 
-  5. the SHA256 checksum of the .zip file.
+    * a documentation how to reproduce the results of the paper,  
+  5. the SHA256 checksum of the .zip file, and
+  6. the paper ID of your accepted paper.
 * A .pdf file of the most recent version of the accepted paper, which may differ from the submitted version to take reviewers' comments into account.
 
 Please also look at the [Artifact Packaging Guidelines](#artifact-packaging-guidelines) for detailed information about the contents of the submission.
